@@ -1,0 +1,379 @@
+@charset "UTF-8";
+
+html, body {
+  background: #f0f0f0;
+  margin: 0;
+  height: 100%;
+  font-family: "Helvetica Neue",
+                Arial,
+               "Hiragino Kaku Gothic ProN",
+               "Hiragino Sans",
+                Meiryo,
+                sans-serif;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.fas {
+  font-family: "Font Awesome 5 Free";
+}
+
+h2 {
+  margin: 25px 0 5px 0;
+  font-size: 32px;
+  cursor: default;
+}
+
+h4 {
+  margin: 25px 0 5px 0;
+  font-size: 25px;
+  cursor: default;
+}
+
+h5 {
+  margin: 5px 0 0 0;
+  font-size: 18px;
+  cursor: default;
+}
+
+@media screen and (max-width: 768px) {
+  h5 {
+    margin: 0 0 17px 0;
+  }
+}
+
+p {
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media screen and (min-width: 768px) {
+ .container {
+   padding: 0 50px;
+   width: 1170px;
+ }
+}
+
+.wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.menu-trigger {
+  display: inline-block;
+  width: 36px;
+  height: 28px;
+  vertical-align: middle;
+  cursor: pointer;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  z-index: 100;
+  transform: translateX(0);
+  transition: transform .5s;
+ }
+
+.menu-trigger.active {
+  transform: translateX(-250px);
+}
+
+.menu-trigger span {
+ display: inline-block;
+ box-sizing: border-box;
+ position: absolute;
+ left: 0;
+ width: 100%;
+ height: 4px;
+ background-color: #fff;
+}
+
+.menu-trigger.active span {
+ background-color: #fff;
+}
+
+.menu-trigger span:nth-of-type(1) {
+  top: 0;
+}
+
+.menu-trigger.active span:nth-of-type(1) {
+  transform: translateY(12px) rotate(-45deg);
+}
+
+.menu-trigger span:nth-of-type(2) {
+  top: 12px;
+}
+
+.menu-trigger.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.menu-trigger span:nth-of-type(3) {
+  bottom: 0;
+}
+
+.menu-trigger.active span:nth-of-type(3) {
+  transform: translateY(-12px) rotate(45deg);
+}
+
+nav {
+  width: 200px;
+  height: 100%;
+  padding-top: 70px;
+  background-color: #5B7216;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  transform: translate(200px);
+  transition: all 0.5s;
+}
+
+nav.open {
+  transform: translateZ(0);
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+}
+
+nav li:hover {
+  background-color: #3B490E;
+}
+
+nav a:hover {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.bg {
+  background: no-repeat url(https://popo8899.github.io/portfolio.io/canada.png) center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .bg {
+    object-fit: cover;
+  }
+}
+
+.bg::before {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 70px;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 50px;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
+  cursor: pointer;
+  z-index: 1;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #3B490E;
+  border: 1px solid #3B490E;
+  transition: all 0.3s ease;
+}
+
+.txt {
+  text-align: center;
+}
+
+.cl {
+  font-size: 13px;
+  color: #5B7216;
+  cursor: default;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-outer {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 180px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro-outer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.icon img {
+  width: 170px;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 95px;
+}
+
+.re {
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.fn {
+  font-size: 14px;
+  margin-top: 7px;
+  color: #5B7216;
+}
+
+.hobby {
+  font-size: 17px;
+}
+
+.fa-caret-right {
+  content: \f0da;
+  font-weight: 900;
+  color: #000;
+}
+
+.bar {
+  position: relative;
+  width: 50%;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .bar {
+    width: 100%;
+  }
+}
+
+.bar .bar-info {
+  border-radius: 5px;
+  padding: 0.75rem;
+  background: #fd7473;
+  color: #fff;
+  width: 10%;
+  position: relative;
+  transition: width 3.3s ease-in-out;
+}
+
+.bar .bar-info .percent {
+  float: right;
+}
+
+.bar .bar-info.html {
+  background: linear-gradient(#fd7473, #FC688E), #fd7473;
+}
+
+.bar .bar-info.css {
+  background: linear-gradient(#9f68d0, #BB68D0), #9f68d0;
+}
+
+.bar .bar-info.ps {
+  background: linear-gradient(#47b8e0, #28BEFA), #47b8e0;
+}
+
+.bar .bar-info.ai {
+  background: linear-gradient(#fec951, #FCAD44), #fec951;
+}
+
+.outer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .outer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.blumen img {
+  width: 260px;
+  height: 487px;
+}
+
+.gateau img {
+  width: 260px;
+  height: 487px;
+  object-fit: cover;
+}
+
+.oazo img {
+  width: 260px;
+  height: 487px;
+  object-fit: cover;
+}
+
+footer {
+  margin-top: 15px;
+  padding: 25px;
+  background: #000;
+}
+
+.footer-copyright {
+  color: #fff;
+  text-align: center;
+}
+
+#scroll-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  width: 50px;
+  height: 50px;
+}
+
+#scroll-top a {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.fa-chevron-circle-up {
+  content: \f139;
+  font-weight: 900;
+  color: #3B490E;
+}

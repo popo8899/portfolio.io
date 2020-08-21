@@ -320,6 +320,7 @@ button:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 13px;
 }
 
 @media screen and (max-width: 768px) {
@@ -337,13 +338,31 @@ button:hover {
 .gateau img {
   width: 260px;
   height: 487px;
-  object-fit: cover;
 }
 
 .oazo img {
   width: 260px;
   height: 487px;
-  object-fit: cover;
+}
+
+.lumirise img {
+  width: 400px;
+  height: auto;
+}
+
+.labios img {
+  width: 400px;
+  height: auto;
+}
+
+.magazine img {
+  width: 260px;
+  height: auto;
+}
+
+.poster img {
+  width: 260px;
+  height: auto;
 }
 
 footer {

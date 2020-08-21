@@ -360,9 +360,15 @@ button:hover {
   height: auto;
 }
 
-.poster img {
+.poster1 img {
   width: 260px;
   height: auto;
+}
+
+.poster2 img {
+  width: 260px;
+  height: auto;
+  background-color: #fff;
 }
 
 footer {

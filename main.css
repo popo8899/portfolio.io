@@ -332,43 +332,22 @@ button:hover {
 
 .blumen img {
   width: 260px;
-  height: 487px;
+  height: 495px;
 }
 
 .gateau img {
   width: 260px;
-  height: 487px;
+  height: 495px;
 }
 
 .oazo img {
   width: 260px;
-  height: 487px;
+  height: 495px;
 }
 
-.lumirise img {
-  width: 400px;
-  height: auto;
-}
-
-.labios img {
-  width: 400px;
-  height: auto;
-}
-
-.magazine img {
+.others img {
   width: 260px;
-  height: auto;
-}
-
-.poster1 img {
-  width: 260px;
-  height: auto;
-}
-
-.poster2 img {
-  width: 260px;
-  height: 365px;
-  background-color: #fff;
+  height: 495px;
 }
 
 footer {
